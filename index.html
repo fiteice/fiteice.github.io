@@ -1,1 +1,113 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hbd</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+    <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://hbd.htmlku.repl.co/script.js"></script>
+</head>
+<style>
+    :root {
+        --warna-bg: rgba(0, 0, 0, .7);
+        --warna-text: white;
+        --bingkai: 14px;
+        --gaya-font: 'Josefin Sans', Sans-serif;
+    }
+</style>
+
+<body>
+    <div id="dahh"><img id="foto" src="" height="100%" width="100%">
+        <div id="iye"></div>
+    </div>
+
+    <div id="content">
+        <div>
+            <marquee id="lewat" direction="right"><img id="animasi" src="" width="100px" height="100px"></marquee>
+        </div>
+
+        <div>
+            <div id="geser">
+                <!--pesan test ye-->
+                <p><b><img src="https://i.ibb.co/R4F0Pfq/Minezero.png" /></b><br><span>p</span></p>
+
+                <p><b><img src="https://i.ibb.co/R4F0Pfq/Minezero.png" /></b><br><span>n</span></p>
+
+                <p><b><img src="https://i.ibb.co/R4F0Pfq/Minezero.png" /></b><br><span>g</span></p>
+
+                <p><b><img src="https://i.ibb.co/R4F0Pfq/Minezero.png" /></b><br><span>k</span></p>
+
+                <p><b><img src="https://i.ibb.co/R4F0Pfq/Minezero.png" /></b><br><span>l</span></p>
+
+                <!--tombol akhir-->
+                <p><b><img id="ggg" src="https://i.ibb.co/R4F0Pfq/Minezero.png"
+                            onclick="plant();" /></b><br><span>klik</span></p>
+            </div>
+        </div>
+
+        <p id="idgeser">hai &#128073; </p>
+        <p id="idkalimat"></p>
+        <p id="idmarq">
+            <marquee id="akhirsekali"></marquee>
+        </p>
+
+        <div id="contTom"><a class="button" onclick="sjawab()"></a></div>
+    </div>
+
+    <script>
+        function nongeser() { idgeser.style = "transform: scale(.1);opacity:0"; ggg.style = "opacity:1;visibility:visible"; }
+        function showDiv() { setTimeout(kpemb, 100); setTimeout(nongeser, 2500); document.getElementById('content').style = "opacity:1;margin-top:10vh;animation:none 3s inifinite;"; document.getElementById("geser").style = "opacity:1;visibility: visible;"; }
+        function showAkhir() { setInterval(createHeart, 200); document.getElementById('k2').style = "opacity:1;transform: scale(1);margin:0;"; document.getElementById('content').style.display = "none"; }
+        function mulaiakhir() { nonDiv(); setTimeout(showAkhir, 500); setTimeout(finalis, 600); }
+        function tombol() { contTom.style = "margin-top:20px;opacity:1;transform: scale(1);"; ftom = 1; } ftom = 0; function sjawab() { if (ftom == 1) { jawab(); } }
+        var aa = 0, pemb; pemb = ""; var i = 0, halo; halo = ""; var u = 0, text2; text2 = ""; var o = 0, text3; text3 = ""; var a = 0, final1; final1 = ""; var ab = final2; final2 = "";
+        function kpemb() { document.getElementById('dahh').style = "opacity:.7;"; }
+        function finalis() { document.getElementById("bq").style = "opacity:1;visibility:visible;margin-top:0;"; setTimeout(showTom, 4000); }
+        const swals = Swal.mixin({ allowOutsideClick: false, cancelButtonColor: '#FF0040' }); const swalsy = Swal.mixin({ confirmButtonText: 'iya', allowOutsideClick: false, }); const swalst = Swal.mixin({ allowOutsideClick: false, showConfirmButton: false, timer: 1000, timerProgressBar: true, didOpen: () => { Swal.showLoading(); const b = Swal.getHtmlContainer().querySelector('b'); timerInterval = setInterval(() => { Swal.getTimerLeft() }, 100) }, willClose: () => { clearInterval(timerInterval) } }); const style = document.createElement('style');
+        function play() { var audio = new Audio('' + linkmp3); audio.play(); } const body = document.querySelector("body"); function createHeart() { const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90) + "vw"; heart.style.animationDuration = (Math.random() * 3) + 2 + "s"; body.appendChild(heart); } setInterval(function name(params) { var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) { heartArr[0].remove() } }, 100); }
+        function StartMarqueeL() { lewat.style = "opacity:1;height:100px;"; var marquee = document.getElementById("lewat"); marquee.start(); } function StopMarqueeL() { var marquee = document.getElementById("lewat"); marquee.stop(); } StopMarqueeL(); function akhiran() { setTimeout(startmq, 4000); dahh.style = "opacity:.4;animation:none"; iye.style = "-webkit-backdrop-filter:blur(5px); backdrop-filter:blur(5px)"; foto.style = "transform: scale(1.6)"; geser.style = "display:none"; StartMarqueeL(); idgeser.innerHTML = ""; idkalimat.innerHTML = akhirkata2; idgeser.style = "opacity:1;transform: scale(1);font-size:16px;font-weight:400;margin:0 30px;margin-top:15px;"; setTimeout(aksiakhir, 800); }
+        function startmq() { var marquee = document.getElementById("akhirsekali"); marquee.start(); } function stopmq() { var marquee = document.getElementById("akhirsekali"); marquee.stop(); } stopmq();
+        async function menuju() { await swals.fire('OK!', 'Kirim pesan ke WhatsAppku, ok?', 'success'); window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp; }
+        var aa = 0, akhirkata; akhirkata = ""; function aksiakhir() {
+            if (aa < akhirkata.length) { idgeser.innerHTML += akhirkata.charAt(aa); aa++; setTimeout(aksiakhir, 65); }
+            if (aa == akhirkata.length) { idkalimat.style = "opacity:1;transform: scale(1);font-size:16px;margin-top:20px"; setTimeout(showakhirsekali, 1100); }
+        } function showakhirsekali() { akhirsekali.style = "opacity:1;transform: scale(1);font-size:16px;margin-top:20px"; setTimeout(tombol, 4000); }
+    </script>
+
+    <script type="text/javascript">
+        async function jawab() {
+            var{ value: jawaban } = await swals.fire({
+                title: 'isi pesan anda nyonya', input: 'text', allowOutsideClick: false, showCancelButton: false,
+            });
+            if (jawaban && jawaban.length < 16) {
+                window.jawaban = jawaban; pesanwhatsapp = jawaban; menuju();
+            } else {
+                await swals.fire('Ups', 'kolom jangan kosong lah atau lebih dari 15, ok?!');
+            }
+        }
+
+        async function pertama() {
+            foto.src = "https://i.postimg.cc/bwB1FBYV/wallpaper.jpg";
+            animasi.src = "";
+            audio = new Audio('');
+
+            akhirkata = "Semoga di hari spesialmu kamu gak jomblo lagi dan semoga menjadi pribadi yang baik";
+            akhirkata2 = "Selamat ultah Rara";
+            akhirsekali.innerHTML = "Btw kalau udah punya pacar spill ye";
+
+            await swalst.fire('Bentar'); lanjut();
+        }
+        pertama()
+
+        async function lanjut() {
+            await swals.fire('Selamat datang Rara', 'Sekarang liat ini'); showDiv(); audio.play();
+        }
+    </script>
+</body>
+</html>
