@@ -1,0 +1,19 @@
+body {
+    background: #101010;
+    font-family: var(--gaya-font);
+    padding: 25px;
+}
+
+a (
+    text-decoration: none;
+)
+
+body::before (
+    content: "\00A9 script html";
+    color: white;
+    opacity: .3;
+    font-size: 2vw;
+    position: fixed;
+    button: 15px;
+    left: 15px;
+)
